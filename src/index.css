@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Kanit, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --bg_dark: #171717;
+
+  --primary: #60A5D7;
+  --primary_dark: #1F1F1F;
+}
+
+@layer components {
+  .btn_custom {
+    @apply px-4 py-2 bg-blue-400 rounded-md
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+}
+
+.container_custom {
+  width: 1200px;
+}

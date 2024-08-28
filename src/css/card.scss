@@ -1,0 +1,33 @@
+.card {
+    position: relative;
+    border-radius: 8px;
+    color: #fff;
+    z-index: 2;
+
+    &::before {
+        width: 80%;
+        height: 100%;
+        content: "";
+        border-radius: 8px;
+        z-index: -1;
+        
+        position: absolute;
+        top: -1%;
+        left: 10%;
+        border: 2px solid var(--primary_dark);
+        transform: rotate(-2deg);
+    }
+
+    &::after {
+        width: 80%;
+        height: 100%;
+        content: "";
+        border-radius: 8px;
+        z-index: -1;
+        background-color: var(--primary_dark);
+
+        position: absolute;
+        top: -1%;
+        left: 10%;    
+    }
+}

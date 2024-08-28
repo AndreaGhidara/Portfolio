@@ -1,0 +1,35 @@
+.btnCircle {
+    position: relative;
+    border: none;
+    color: #fff;
+    font-family: Cascadia Code;
+    text-transform: lowercase;
+    cursor: pointer;
+    font-size: 1.6rem;
+    z-index: 1;
+    display: inline-block;
+    background-color: #292929;
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 4rem;
+    font-size: 2rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        border: 1px solid #292929;
+        background: transparent;
+        height: 104%;
+        width: 104%;
+        border-radius: 4rem;
+        z-index: -1;
+        -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    }
+
+    &:hover {
+        transform: scale(110%);
+    }
+}
