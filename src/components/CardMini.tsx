@@ -1,11 +1,11 @@
-import CircleButton from "./CircleButton";
+// import CircleButton from "./CircleButton";
 import '@/css/cardMini.scss';
 
 export default function CardMini() {
     return (
         <div className="cardMini">
             <div className="flex justify-end">
-                <CircleButton />
+                {/* <CircleButton icon={undefined} link={""} /> */}
             </div>
             <h1>Nome Progetto</h1>
             <h2>Sotto Titolo </h2>
